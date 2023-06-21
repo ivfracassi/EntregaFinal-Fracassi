@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    text-align: center;
+    padding: 1%;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+}
+
+
+.encabezado{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: lightblue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.boton-main{
+    background-color: darkgrey;
+}
+
+
+.pdp{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: lightblue;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.pdp-address{
+    text-align: left;
+}
+
+
+.pdp-sm{
+    text-align: right;
+}
+
+
+.no-bullets{
+    list-style: none;
+}
+
+
+.nav-encabezado{
+    height: 50%;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    background-color: black;
+    color: snow;
+    justify-content: space-around;
+}
+
+
+#imagen-local{
+    width: 100%;
+    height: 10%;
+}
+
+
+.cont-marcas{
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: large;
+    padding: 1%;
+}
+
+
+#fotos-marcas{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.img-index{
+    height: auto;
+    width: 25%;
+    object-fit: cover;
+}
+
+
+#a-y-t{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+
+.titulo{
+    text-align: center;
+    justify-content: center;
+}
+
+
+#carrusel{
+    height: 100%;
+    background-color: lightblue;
+}
+
+
+#sede-central{
+    background-color: grey;
+}
+
+
+
+.titulos-nosotros{
+    text-align: center;
+    background-color: grey;
+    padding: 1%;
+}
+
+
+#contenedores{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+#img-vision{
+    background-color: grey;
+}
+
+#img-ambiente{
+    background-color: green;
+}
+
+
+#multimarca{
+    background-color: gray;
+    text-align: center;
+    padding: 1%;
+}
+
+.titulos-marcas{
+    text-align: center;
+    background-color: lightskyblue;
+    padding: 0.5%;
+    font-size: x-large;
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ubicacion{
+    background-color: lightblue;
+    padding: 1%;
+    margin: 3%;
+}
+
+.local{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.titulo-contacto{
+    text-align: center;
+    padding: 1%;
+}
+
+.subtitulo-contacto{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.titulo-area-contacto{
+    font: large;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#empleado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+#cliente{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    background-color: lightsteelblue;
+}
+
+
+
+
