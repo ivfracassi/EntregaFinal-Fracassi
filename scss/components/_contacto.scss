@@ -1,0 +1,69 @@
+@media (max-width: 576px) {
+    .pag-contacto{
+        display: inline-block;
+    }
+    #cliente{
+        height: fit-content;
+    }
+}
+
+.titulo-contacto{
+    text-align: center;
+    padding: 1%;
+}
+
+.subtitulo-contacto{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.titulo-area-contacto{
+    font: large;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#empleado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+#cliente{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    background-color: lightsteelblue;
+}
+
+#contacto{
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+#empleado-fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/empleado.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1%;
+    margin: 50px;
+    height: 200px;
+    color: snow;
+}
+
+#cliente-fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/cliente.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1%;
+    margin: 50px;
+    height: 200px;
+    color: snow;
+}

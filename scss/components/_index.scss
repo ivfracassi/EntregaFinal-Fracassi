@@ -1,0 +1,57 @@
+
+@media (max-width: 576px) {
+
+}
+
+#imagen-local{
+    width: 100%;
+    height: 10%;
+}
+
+.cont-marcas{
+    @extend %flex-column;
+    background-color: $color-ppal;
+    justify-content: space-evenly;
+    font-size: large;
+    padding: 1%;
+}
+
+#fotos-marcas{
+    @extend %flex-column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.img-index{
+    height: auto;
+    width: 25%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+#a-y-t{
+    height: 450px;
+    width: 100%;
+    @extend %flex-row;
+    padding: 1%;
+}
+
+.titulo{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrusel{
+    @extend %flex-column;
+    height: 100%;
+    background-color: lightblue;
+}
+
+
+#sede-central{
+    @extend %flex-column;
+    height: 100%;
+    background-color: grey;
+}

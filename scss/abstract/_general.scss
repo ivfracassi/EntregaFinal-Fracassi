@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    text-align: center;
+    padding: 1%;
+}
+
+body{
+    font-family: 'Ysabeau SC', sans-serif;
+    height: 100%;
+}
+
+@media (max-width: 576px) {
+
+    body{
+        font-size: x-small;
+    }
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-main{
+        font-size: x-small;
+        font-weight: 800;
+    }
+    .pdp{
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        flex-wrap: wrap;
+    }
+    #contenedores{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+.encabezado{
+    @extend %flex-row;
+    justify-content: space-between;
+    background-color: $color-ppal;
+    padding: 5px;
+}
+
+.nav-encabezado{
+    height: 50%;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    color: snow;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+
+.boton-main{
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: snow;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#dark{
+    background-color: black;
+    color: snow;
+}
+
+.pdp{
+    @extend %flex-row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+    background-color: $color-ppal;
+}
+
+
+.pdp-address{
+    text-align: left;
+}
+
+
+.pdp-sm{
+    text-align: right;
+}
+
+
+.no-bullets{
+    list-style: none;
+}
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} 
+
+%flex-row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}

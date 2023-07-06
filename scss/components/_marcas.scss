@@ -1,0 +1,30 @@
+@media (max-width: 576px) {
+    #fotos-marcas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+#multimarca{
+    background-color: gray;
+    text-align: center;
+    padding: 1%;
+}
+
+.titulos-marcas{
+    text-align: center;
+    background-color: lightskyblue;
+    padding: 0.5%;
+    font-size: x-large;
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

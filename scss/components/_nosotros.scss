@@ -1,0 +1,27 @@
+@media (max-width: 576px) {
+
+}
+
+.titulos-nosotros{
+    text-align: center;
+    background-color: grey;
+    padding: 1%;
+}
+
+
+#contenedores{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+#img-vision{
+    background-color: grey;
+    margin: 1%;
+}
+
+#img-ambiente{
+    background-color: green;
+    margin: 1%;
+}

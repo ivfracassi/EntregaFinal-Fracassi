@@ -1,0 +1,23 @@
+@media (max-width: 576px) {
+
+}
+
+.ubicacion{
+    background-color: lightblue;
+    padding: 1%;
+    margin: 3%;
+}
+
+.local{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-locales{
+    font-size: large;
+    font-weight: 800;
+}
