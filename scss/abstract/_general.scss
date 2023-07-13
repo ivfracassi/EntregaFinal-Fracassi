@@ -13,35 +13,6 @@ body{
     height: 100%;
 }
 
-@media (max-width: 576px) {
-
-    body{
-        font-size: x-small;
-    }
-    .encabezado{
-        display: flex;
-        flex-direction: column;
-    }
-    .boton-main{
-        font-size: x-small;
-        font-weight: 800;
-    }
-    .pdp{
-        display: flex;
-        flex-direction: column;
-        font-size: large;
-        flex-wrap: wrap;
-    }
-    #contenedores{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-}
-
 .encabezado{
     @extend %flex-row;
     justify-content: space-between;
@@ -111,4 +82,39 @@ body{
     flex-direction: row;
     text-align: center;
     align-items: center;
+}
+
+@media (max-width: 576px) {
+
+    body{
+        font-size: x-small;
+    }
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-encabezado{
+        justify-content: space-evenly;
+    }
+
+    .boton-main{
+        font-size: x-small;
+        font-weight: 800;
+    }
+    .pdp{
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+        justify-content: center;
+    }
+
+    #contenedores{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
 }

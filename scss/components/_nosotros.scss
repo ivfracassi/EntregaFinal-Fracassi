@@ -4,7 +4,10 @@
 
 .titulos-nosotros{
     text-align: center;
-    background-color: grey;
+    color: white;
+    background-image: url(../img/fondo-gris.jpg);
+    background-size: cover;
+    background-position: center; 
     padding: 1%;
 }
 
@@ -22,6 +25,6 @@
 }
 
 #img-ambiente{
-    background-color: green;
+    background-color: rgb(10, 204, 97);
     margin: 1%;
 }
