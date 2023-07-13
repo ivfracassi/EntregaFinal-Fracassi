@@ -126,8 +126,8 @@ body {
 }
 
 .img-index {
-  height: auto;
   height: 25%;
+  width: 100%;
   object-fit: cover;
   padding: 10px;
 }
@@ -173,7 +173,7 @@ body {
     gap: 10px;
     height: 400px;
     order: 8;
-    margin-bottom: 500px;
+    margin-bottom: 175px;
   }
   #sede-central {
     width: 100%;
