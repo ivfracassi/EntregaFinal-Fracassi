@@ -1,22 +1,22 @@
-@media (max-width: 576px) {
-    .fm{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .img-marcas{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-}
-
 .fm{
     display: flex;
+    justify-content: space-evenly;
 }
 
+.img-marcas{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 #multimarca{
-    background-color: gray;
+    background-image: url(../img/fondo-gris.jpg);
+    background-size: cover;
+    background-position: center; 
+    color: snow;
     text-align: center;
     padding: 1%;
 }
@@ -35,5 +35,20 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    align-items: center;
+}
+
+#input-furmulario{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-content: center;
+}
+
+.bloque{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
 }

@@ -1,0 +1,139 @@
+@media (max-width: 576px) {
+    body{
+        font-size: x-small;
+    }
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-encabezado{
+        justify-content: space-evenly;
+    }
+
+    .boton-main{
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    .pdp-address, .pdp-sm{
+        display: none;
+    }
+
+    .pdp-logo {
+        display: flex;
+    }
+
+    #contenedores{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .cont-marcas{
+        font-size: small;
+    }
+
+    #fotos-marcas{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        height: 400px;
+        order: 8;
+        margin-bottom: 175px;
+    }
+
+    #sede-central{
+        width: 100%;
+    }
+
+    .img-index{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #a-y-t{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 80px;
+    }
+    
+    #texto-mision{
+        font-size: small;
+    }
+
+    .texto-nosotros{
+        height: 150px;
+    }
+
+    #multimarca{
+        p{
+            font-size: small;
+        }
+    }
+
+    .fm{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .img-marcas{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    #formulario{
+        font-size: small;
+        #input-formulario{
+            width: 50%;
+        }
+    }
+
+    #img-catalogo{
+        display: none;
+    }
+
+    .local{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo-sucursal{
+        order: -1;
+    }
+
+    .imagen-sucursal{
+        order: 2;
+    }
+
+    .mapa{
+        order: 3;
+    }
+
+    .iframe{
+        width: 300px;
+        height: 300px;
+    }
+
+    .pag-contacto{
+        display: inline-block;
+    }
+    
+    #cliente{
+        height: fit-content;
+    }
+}

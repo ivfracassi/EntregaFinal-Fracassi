@@ -1,7 +1,3 @@
-@media (max-width: 576px) {
-
-}
-
 .titulos-nosotros{
     text-align: center;
     color: white;
@@ -11,20 +7,37 @@
     padding: 1%;
 }
 
+.texto-nosotros{
+    height: 300px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
 
 #contenedores{
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    justify-content: center;
 }
 
-
-#img-vision{
-    background-color: grey;
-    margin: 1%;
+#mision{
+    display: flex;
+    justify-content: center;
 }
 
-#img-ambiente{
-    background-color: rgb(10, 204, 97);
+#texto-mision{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    font-size: medium;
+}
+
+#img-vision, #img-ambiente{
+    display: flex;
     margin: 1%;
+    justify-content: center;
+    align-content: center;
+    
 }

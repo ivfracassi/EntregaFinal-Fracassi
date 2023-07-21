@@ -41,12 +41,24 @@ body{
     font-weight: 600;
 }
 
+.boton-main:hover{
+    background-color: black;
+    color: snow;
+}
+
+
 #dark{
     background-color: black;
     color: snow;
 }
 
-.pdp{
+#dark:hover{
+    background-color: lightseagreen;
+    color: black;
+}
+
+
+.pdp {
     @extend %flex-row;
     justify-content: space-evenly;
     width: 100%;
@@ -54,67 +66,30 @@ body{
     background-color: $color-ppal;
 }
 
-
-.pdp-address{
-    text-align: left;
+.pdp-address, .pdp-sm {
+    @extend %flex-column;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-
-.pdp-sm{
-    text-align: right;
+.pdp-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-
-.no-bullets{
-    list-style: none;
-}
-
-%flex-column{
+%flex-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-} 
+}
 
-%flex-row{
+%flex-row {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
-}
-
-@media (max-width: 576px) {
-
-    body{
-        font-size: x-small;
-    }
-    .encabezado{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nav-encabezado{
-        justify-content: space-evenly;
-    }
-
-    .boton-main{
-        font-size: 12px;
-        font-weight: 800;
-    }
-    .pdp{
-        display: flex;
-        flex-direction: column;
-        font-size: medium;
-        justify-content: center;
-    }
-
-    #contenedores{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
 }

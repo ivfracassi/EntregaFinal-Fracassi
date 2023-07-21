@@ -39,9 +39,19 @@ body {
   font-weight: 600;
 }
 
+.boton-main:hover {
+  background-color: black;
+  color: snow;
+}
+
 #dark {
   background-color: black;
   color: snow;
+}
+
+#dark:hover {
+  background-color: lightseagreen;
+  color: black;
 }
 
 .pdp {
@@ -51,19 +61,19 @@ body {
   background-color: lightblue;
 }
 
-.pdp-address {
-  text-align: left;
+.pdp-address, .pdp-sm {
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.pdp-sm {
-  text-align: right;
+.pdp-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.no-bullets {
-  list-style: none;
-}
-
-#sede-central, #carrusel, .cont-marcas {
+#sede-central, #carrusel, .cont-marcas, .pdp-address, .pdp-sm {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,36 +88,6 @@ body {
   align-items: center;
 }
 
-@media (max-width: 576px) {
-  body {
-    font-size: x-small;
-  }
-  .encabezado {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-encabezado {
-    justify-content: space-evenly;
-  }
-  .boton-main {
-    font-size: 12px;
-    font-weight: 800;
-  }
-  .pdp {
-    display: flex;
-    flex-direction: column;
-    font-size: medium;
-    justify-content: center;
-  }
-  #contenedores {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-}
 #imagen-local {
   width: 100%;
   height: 10%;
@@ -158,37 +138,6 @@ body {
   background-position: center;
 }
 
-@media (max-width: 576px) {
-  .cont-marcas {
-    font-size: small;
-  }
-  #fotos-marcas {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    height: 400px;
-    order: 8;
-    margin-bottom: 175px;
-  }
-  #sede-central {
-    width: 100%;
-  }
-  .img-index {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  #a-y-t {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 80px;
-  }
-}
 .titulos-nosotros {
   text-align: center;
   color: white;
@@ -198,39 +147,57 @@ body {
   padding: 1%;
 }
 
+.texto-nosotros {
+  height: 300px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 #contenedores {
   display: flex;
-  flex-direction: row;
-  text-align: center;
+  justify-content: center;
 }
 
-#img-vision {
-  background-color: grey;
+#mision {
+  display: flex;
+  justify-content: center;
+}
+
+#texto-mision {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  font-size: medium;
+}
+
+#img-vision, #img-ambiente {
+  display: flex;
   margin: 1%;
+  justify-content: center;
+  align-content: center;
 }
 
-#img-ambiente {
-  background-color: rgb(10, 204, 97);
-  margin: 1%;
-}
-
-@media (max-width: 576px) {
-  .fm {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .img-marcas {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-}
 .fm {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.img-marcas {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #multimarca {
-  background-color: gray;
+  background-image: url(../img/fondo-gris.jpg);
+  background-size: cover;
+  background-position: center;
+  color: snow;
   text-align: center;
   padding: 1%;
 }
@@ -248,6 +215,21 @@ body {
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  align-items: center;
+}
+
+#input-furmulario {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-content: center;
+}
+
+.bloque {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
 }
 
@@ -271,14 +253,6 @@ body {
   font-weight: 800;
 }
 
-@media (max-width: 576px) {
-  .pag-contacto {
-    display: inline-block;
-  }
-  #cliente {
-    height: fit-content;
-  }
-}
 .titulo-contacto {
   text-align: center;
   padding: 1%;
@@ -338,6 +312,121 @@ body {
   margin: 50px;
   height: 200px;
   color: snow;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: x-small;
+  }
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-encabezado {
+    justify-content: space-evenly;
+  }
+  .boton-main {
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .pdp-address, .pdp-sm {
+    display: none;
+  }
+  .pdp-logo {
+    display: flex;
+  }
+  #contenedores {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .cont-marcas {
+    font-size: small;
+  }
+  #fotos-marcas {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 400px;
+    order: 8;
+    margin-bottom: 175px;
+  }
+  #sede-central {
+    width: 100%;
+  }
+  .img-index {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #a-y-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 80px;
+  }
+  #texto-mision {
+    font-size: small;
+  }
+  .texto-nosotros {
+    height: 150px;
+  }
+  #multimarca p {
+    font-size: small;
+  }
+  .fm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .fm .img-marcas {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #formulario {
+    font-size: small;
+  }
+  #formulario #input-formulario {
+    width: 50%;
+  }
+  #img-catalogo {
+    display: none;
+  }
+  .local {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .titulo-sucursal {
+    order: -1;
+  }
+  .imagen-sucursal {
+    order: 2;
+  }
+  .mapa {
+    order: 3;
+  }
+  .iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .pag-contacto {
+    display: inline-block;
+  }
+  #cliente {
+    height: fit-content;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
